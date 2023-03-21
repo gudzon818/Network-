@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CED6DE0329CA29A900C9AABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DE0229CA29A900C9AABB /* AppDelegate.swift */; };
 		CED6DE0529CA29A900C9AABB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DE0429CA29A900C9AABB /* SceneDelegate.swift */; };
-		CED6DE0729CA29A900C9AABB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DE0629CA29A900C9AABB /* ViewController.swift */; };
+		CED6DE0729CA29A900C9AABB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DE0629CA29A900C9AABB /* MainViewController.swift */; };
 		CED6DE0A29CA29A900C9AABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED6DE0829CA29A900C9AABB /* Main.storyboard */; };
 		CED6DE0C29CA29A900C9AABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED6DE0B29CA29A900C9AABB /* Assets.xcassets */; };
 		CED6DE0F29CA29A900C9AABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED6DE0D29CA29A900C9AABB /* LaunchScreen.storyboard */; };
+		CED6DE1B29CA2A7500C9AABB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DE1A29CA2A7500C9AABB /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CED6DDFF29CA29A900C9AABB /* Network!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6DE0229CA29A900C9AABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED6DE0429CA29A900C9AABB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED6DE0629CA29A900C9AABB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED6DE0629CA29A900C9AABB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CED6DE0929CA29A900C9AABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED6DE0B29CA29A900C9AABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED6DE0E29CA29A900C9AABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED6DE1029CA29A900C9AABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED6DE1A29CA2A7500C9AABB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		CED6DE0129CA29A900C9AABB /* Network! */ = {
 			isa = PBXGroup;
 			children = (
-				CED6DE0229CA29A900C9AABB /* AppDelegate.swift */,
-				CED6DE0429CA29A900C9AABB /* SceneDelegate.swift */,
-				CED6DE0629CA29A900C9AABB /* ViewController.swift */,
-				CED6DE0829CA29A900C9AABB /* Main.storyboard */,
+				CED6DE1629CA2A2200C9AABB /* App */,
+				CED6DE1729CA2A2C00C9AABB /* ViewControllers */,
 				CED6DE0B29CA29A900C9AABB /* Assets.xcassets */,
-				CED6DE0D29CA29A900C9AABB /* LaunchScreen.storyboard */,
-				CED6DE1029CA29A900C9AABB /* Info.plist */,
+				CED6DE1C29CA2A8400C9AABB /* Models */,
+				CED6DE1829CA2A4600C9AABB /* Storyboards */,
 			);
 			path = "Network!";
+			sourceTree = "<group>";
+		};
+		CED6DE1629CA2A2200C9AABB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CED6DE0229CA29A900C9AABB /* AppDelegate.swift */,
+				CED6DE0429CA29A900C9AABB /* SceneDelegate.swift */,
+				CED6DE1029CA29A900C9AABB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CED6DE1729CA2A2C00C9AABB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CED6DE0629CA29A900C9AABB /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CED6DE1829CA2A4600C9AABB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CED6DE0829CA29A900C9AABB /* Main.storyboard */,
+				CED6DE0D29CA29A900C9AABB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CED6DE1C29CA2A8400C9AABB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CED6DE1A29CA2A7500C9AABB /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED6DE0729CA29A900C9AABB /* ViewController.swift in Sources */,
+				CED6DE0729CA29A900C9AABB /* MainViewController.swift in Sources */,
 				CED6DE0329CA29A900C9AABB /* AppDelegate.swift in Sources */,
 				CED6DE0529CA29A900C9AABB /* SceneDelegate.swift in Sources */,
+				CED6DE1B29CA2A7500C9AABB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +324,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Network!/Info.plist";
+				INFOPLIST_FILE = "Network!/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gudzon818.Network-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +354,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Network!/Info.plist";
+				INFOPLIST_FILE = "Network!/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +367,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "gudzon818.Network-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
