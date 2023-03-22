@@ -35,17 +35,14 @@ extension MainViewController {
             let decoder = JSONDecoder()
             
             do {
-                let response = try decoder.decode(Response.self, from: data)
-                let beers = response.data.beers
-                print("Number of beers \(beers.count)")
-                guard let beer = beers.randomElement() else { return }
-                print("Random beer: \(beer)")
+                let response = try decoder.decode([Beer].self, from: data)
+                print("\(response)")
+                
             } catch let error {
-              //  print(error.localizedDescription)
                 print(String(describing: error))
             }
         }.resume()
         
     }
 }
-//
+

@@ -7,20 +7,14 @@
 
 import Foundation
 
-struct Beer: Codable {
+struct Beer: Decodable {
     let id: Int
     let name: String
     let tagline: String
     let first_brewed: String
     let description: String
     let image_url: String
-    let abv: Int
+    let abv: Double
 }
 
-struct BeerData: Codable {
-    let beers: [Beer]
-}
 
-struct Response: Codable {
-    let data: BeerData
-}
