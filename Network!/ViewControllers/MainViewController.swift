@@ -16,14 +16,14 @@ final class MainViewController: UIViewController {
     }
 
     @IBAction func request() {
-       fetchbeers()
+       fetchBeers()
     }
     
 }
 
 // MARK: - Networking
 extension MainViewController {
-    func fetchbeers() {
+    func fetchBeers() {
         guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -37,7 +37,7 @@ extension MainViewController {
             do {
                 let response = try decoder.decode(Response.self, from: data)
                 let beers = response.data.beers
-                print("Number of memes: \(beers.count)")
+                print("Number of beers \(beers.count)")
                 guard let beer = beers.randomElement() else { return }
                 print("Random beer: \(beer)")
             } catch let error {
